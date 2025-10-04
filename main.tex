@@ -8,6 +8,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
 \usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{graphicx}
 
 
 %------------------------------------------------------------------ Variablen
@@ -18,7 +19,7 @@
 \setlength{\rightcolwidth}{0.75\textwidth}
 
 %------------------------------------------------------------------
-\title{New Simple CV}
+\title{Professional CV}
 \author{\LaTeX{} Ninja}
 \date{June 2019}
 
@@ -31,7 +32,7 @@
 
 \section*{Start}
 
-\simpleheader{headercolour}{Jack}{Sparrow}{Captain}{white}
+\simpleheader{headercolour}{Wolali}{KOFFI}{Student}{white}
 
 
 
@@ -61,22 +62,22 @@
 
 \bg{cvgreen}{white}{About me}\\[0.5em]
 
-{\footnotesize
-\lorem\lorem\lorem}
+{Passionate student of Applied Mathematics and Computer Science at the University of Strasbourg, 
+currently pursuing a Master's degree in Scientific Computing. Specializing in algorithm design, high-performance computing (HPC), and data management. My academic program is allowing me to consolidate strong skills in programming and numerical analysis to tackle complex technical challenges.}
 \bigskip
 
-\bg{cvgreen}{white}{personal} \\[0.5em]
-Jack Sparrow
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+Wolali KOFFI
 
-nationality: English 
+nationality: Togolese
 
-1690
+2003
 
 \bigskip
 
 \bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
 
-Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
+Mathematics ~•~ Programming ~•~ Database ~•~ High-Performance computing
 
 \bigskip
 
@@ -86,23 +87,29 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 
 \bg{cvgreen}{white}{Interests}\\[0.5em]
 
-\lorem
+What fascinates me as a student is analyzing the stability of a numerical method
+then designing the code that make it efficient.
 \bigskip
 
 \bg{cvgreen}{white}{Interests}\\[0.5em]
 
-\texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+\texttt{C++} ~/~ \texttt{C} ~/~ \texttt{Python}
 
-\texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+\texttt{R} ~/~ \texttt{SQL} ~/~ \texttt{Linux}
 
-\texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+
 
 \vspace{4em}
 
-\infobubble{\faAt}{cvgreen}{white}{jack@sparrow.org}
-\infobubble{\faTwitter}{cvgreen}{white}{@sparrow}
-\infobubble{\faFacebook}{cvgreen}{white}{Jack Sparrow}
-\infobubble{\faGithub}{cvgreen}{white}{sparrow}
+\hspace*{-0.3cm}  % Tu avais -1cm avant, je garde -0.5cm comme dans ton message
+{\scriptsize
+\begin{tabular}{l}
+\infobubble{\faAt}{cvgreen}{white}{wolalikoffi23@gmail.com} \\
+\infobubble{\faLinkedin}{cvgreen}{white}{wolali-koffi} \\
+\infobubble{\faFacebook}{cvgreen}{white}{Wolali KOFFI} \\
+\infobubble{\faGithub}{cvgreen}{white}{wkoffi23}
+\end{tabular}
+}
 
 \phantom{turn the page}
 
@@ -115,69 +122,48 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 \section*{Short Resumé}
 
 \begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back.\lorem\lorem\lorem}{disney.png} \\
-    \cvevent{2016--2017}{Captain of the Black Pearl}{Lead}{Tortuga \color{cvred}}{Found a secret treasure, lost the ship. \lorem\lorem}{medal.jpeg}
+    \cvevent{2023--2024}{Versatile crew member}{CROUS}{Strasbourg \color{cvred}}{Responsible for various tasks in a university cafeteria, I provided quality customer service while actively participating in kitchen operations, dining area service, and cleaning duties.}{crous.png} \\
+ \cvevent{2025--Now}{Math tutor}{Freelance}{Strasbourg \color{cvred}}{Provided personalized support to middle school students to strengthen their math skills, address learning gaps, and build confidence and independence.}{image.png}
 \end{tabular}
 \vspace{3em}
 
 \begin{minipage}[t]{0.35\textwidth}
 \section*{Degrees}
 \begin{tabular}{r p{0.6\textwidth} c}
-    \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{disney.png} \\
-    \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{medal.jpeg} \\
-    \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{medal.jpeg}
+    \cvdegree{2025}{License}{Mathematics}{Université de Strasbourg \color{headerblue}}{}{logo_unistra.png} \\
+    \cvdegree{2021}{Baccalauréat}{Générale}{École Alpha \color{headerblue}}{}{alpha1.png}
 \end{tabular}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.3\textwidth}
 \section*{Programming}
 \begin{tabular}{r @{\hspace{0.5em}}l}
-     \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{0.5em}{cvpurple}\\
-     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.55}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{SQL} &  \barrule{0.2}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.05}{0.5em}{cvgreen} \\
      \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.25}{0.5em}{cvpurple} \\
-     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.1}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{R} & \barrule{0.15}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{C++} & \barrule{0.45}{0.5em}{cvpurple} \\
+    \bg{skilllabelcolour}{iconcolour}{C} & \barrule{0.30}{0.5em}{cvpurple}
 \end{tabular}
 \end{minipage}
 
 \section*{Curriculum}
-\begin{tabular}{r| p{0.5\textwidth} c}
-    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back. \lorem}{disney.png} \\
-    \cvevent{2019}{Freelance Pirate}{Bucaneering}{Tortuga \color{cvred}}{This and that. The usual, aye?  \lorem}{medal.jpeg} \\
+\begin{tabular}{r| p{0.45\textwidth} c}
+    \cvevent{2025--Now}{Master of Scientific Computing and Applied Mathematics for Innovation}{Université de Strasbourg}{Strasbourg \color{cvred}}{I am studying in the Master’s program Scientific Computing and Mathematics for Innovation, where I learn how to solve real-world problems using mathematics, programming, and computer simulations. The training includes numerical methods, data analysis, and practical projects.}{logo_unistra.png} \\
+    \cvevent{2022-2025}{License of Applied Mathematics}{Université de Strasbourg}{Strasbourg \color{cvred}}{During my Bachelor's degree in Mathematics, I developed a strong foundation in core areas such as calculus, linear algebra, probability, statistics, and differential equations.}{logo_unistra.png}
 \end{tabular}
-\vspace{3em}
+\vspace{2em}
 
 \begin{minipage}[t]{0.3\textwidth}
-\section*{Certificates \& Grants}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
-    1708 & Captain's Certificates \\
-    1710 & Travel grant \\
-    1715--1716 & Grant from the Pirate's Company
-\end{tabular}
-\bigskip
 
 \section*{Languages}
 \begin{tabular}{l | ll}
-\textbf{English} & C2 & {\phantom{x}\footnotesize mother tongue} \\
-\textbf{French} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
-\textbf{Spanish} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
-\textbf{Italian} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
+\textbf{French} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+\textbf{English} & B2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\textbf{Spanish} & A2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} 
 \end{tabular}
 \bigskip
 
 \end{minipage}\hfill
-\begin{minipage}[t]{0.3\textwidth}
-\section*{Publications}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
-    1729 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
-    1720 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
-\end{tabular}
-\bigskip
-
-\section*{Talks}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
-    Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
-\end{tabular}
-\end{minipage}
 
 
 
@@ -192,7 +178,7 @@ Privateering ~•~ Bucaneering ~•~ Parler ~•~ Rum
 \setlength{\parindent}{0pt}
 \begin{minipage}[t]{\rightcolwidth}
 \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
-{\small Jack Sparrow \icon{\faEnvelopeO}{cvgreen}{} The Black Pearl \icon{\faMapMarker}{cvgreen}{} Tortuga \icon{\faPhone}{cvgreen}{} 0099/333 5647380 \newline\icon{\faAt}{cvgreen}{} \protect\url{jack@sparrow.com}
+{\small Wolali KOFFI  \icon{\faMapMarker}{cvgreen}{} Strasbourg, FRANCE \icon{\faPhone}{cvgreen}{} +33 0768278148 \newline\icon{\faAt}{cvgreen}{} \protect\url{wolalikoffi23@gmail.com}
 }
 \end{center}
 \end{minipage}
