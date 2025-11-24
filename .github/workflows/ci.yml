@@ -1,0 +1,21 @@
+name: CI Workflow 
+on: [push, pull_request, workflow_dispatch] 
+jobs: 
+  build: 
+    runs-on: self-ubuntu-24.04
+    steps: 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Compile LaTeX document
+        run: latexmk -pdf main.tex
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: main-pdf
+          path: main.pdf
+      - name: summary
+        run: |
+            echo "CI workflow completed successfully." >> $GITHUB_STEP_SUMMARY
+            echo "PDF document is available for download." >> $GITHUB_STEP_SUMMARY
+            echo "Artifact name: main-pdf" >> $GITHUB_STEP_SUMMARY
+            echo "File path: main.pdf" >> $GITHUB_STEP_SUMMARY
